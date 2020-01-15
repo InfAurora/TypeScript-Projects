@@ -8,5 +8,5 @@ function findMax(numbers){
 	big.pop();
 	big.push(numbers[i])}
 }
-	console.log("The biggest number in the list is " + big + ".")
+	return big
 }
