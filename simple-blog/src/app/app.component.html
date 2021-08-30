@@ -1,7 +1,13 @@
 <body>
-  <nav>
-    Something here will be a header!!!
-  </nav>
+  <!-- mat-toolbar needs to be refactored to be its own component so it can be reusable -->
+  <mat-toolbar color="primary">
+    <div>Jose's Blog</div>
+    <div>
+      <a href="">Home</a>
+      <a href="">Login</a>
+      <a href="">Profile</a>
+    </div>
+  </mat-toolbar>
   <main>
     <!-- This should contain the router? So that it can be swapped out when navigating to multiple pages? -->
     Main content here!
