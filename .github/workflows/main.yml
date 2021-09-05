@@ -37,7 +37,7 @@ jobs:
         run: |
           cd simple-blog
           echo -----RUNNING TESTS-----
-          npm test
+          npm test-headless
           echo -----RUNNING TESTS-----
 
 
