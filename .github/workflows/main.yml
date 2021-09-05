@@ -32,12 +32,12 @@ jobs:
           echo -----INSTALLING DEPENDENCIES-----
           npm install
           echo -----INSTALL COMPLETE-----
-        
+
       - name: npm test
         run: |
           cd simple-blog
           echo -----RUNNING TESTS-----
-          npm test-headless
+          npm run test-headless
           echo -----RUNNING TESTS-----
 
 
