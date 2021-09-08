@@ -1,5 +1,7 @@
 # TypeScript-Projects
 
+# READ EVERYTHING BEFORE CREATING PULL-REQUESTS
+
 ### Install Simple-Blog
 1. cd simple-blog
 2. npm install
@@ -9,5 +11,5 @@
 
 ### Pull-Request standard
 1. All PRs will come off of the __develop__ branch.
-2. All branch names for PRs must start with __"PR-"__.
+2. __All branch names for PRs must include a "-"(hyphen)__. Example: issue-5-update-pipeline.
 3. At least __one__ approval before merging.
