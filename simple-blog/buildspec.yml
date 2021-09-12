@@ -17,6 +17,7 @@ phases:
   build:
     on-failure: ABORT
     commands:
+      - ls
       - echo Running tests
       - npm run test-headless
       - echo Build started
