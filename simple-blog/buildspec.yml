@@ -11,12 +11,14 @@ phases:
     runtime-version:
       nodejs: 14;
       commands:
+        - cd simple-blog
         - echo Installing source NPM dependencies...
         - npm install
         - npm install -g @angular/cli
   build:
     on-failure: ABORT
     commands:
+      - cd simple-blog
       - ls
       - echo Running tests
       - npm run test-headless
