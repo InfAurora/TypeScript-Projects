@@ -10,12 +10,11 @@ phases:
     on-failure: ABORT
     runtime-version:
       nodejs: 14;
-      commands:
-        - cd simple-blog
-        - echo Installing source NPM dependencies...
-        - npm install
-        - npm install -g @angular/cli
-        - npm link @angular/cli
+    commands:
+      - cd simple-blog
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli
   build:
     on-failure: ABORT
     commands:
