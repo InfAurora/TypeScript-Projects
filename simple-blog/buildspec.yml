@@ -26,5 +26,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: 'dist*'
+  base-directory: 'simple-blog/dist*'
   discard-paths: yes
