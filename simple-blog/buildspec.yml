@@ -1,0 +1,28 @@
+version: 0.2
+
+env:
+  variables:
+    CACHE_CONTROl: "86400"
+    S3_BUCKET: "s3_bucket_url"
+    BUILD_FOLDER: "dist"
+phases:
+  install:
+    on-failure: ABORT
+    runtime-version:
+      nodejs: 14;
+      commands:
+        - echo Installing source NPM dependencies...
+        - npm install
+        - npm install -g @angular/cli
+  build:
+    on-failure: ABORT
+    commands:
+      - echo Running tests
+      - npm run test-headless
+      - echo Build started
+      - npm run build:prod
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes
