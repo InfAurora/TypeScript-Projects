@@ -18,7 +18,6 @@ phases:
   build:
     on-failure: ABORT
     commands:
-      - cd simple-blog
       - ls
       - echo Running tests
       - npm run test-headless
