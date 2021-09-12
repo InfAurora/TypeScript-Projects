@@ -15,6 +15,7 @@ phases:
         - echo Installing source NPM dependencies...
         - npm install
         - npm install -g @angular/cli
+        - npm link @angular/cli
   build:
     on-failure: ABORT
     commands:
