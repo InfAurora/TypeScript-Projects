@@ -1,6 +1,6 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
+name: Features/Bugs
+about: This will be used to create all kinds of issues (e.g. features, bugs,).
 title: ''
 labels: ''
 assignees: ''
