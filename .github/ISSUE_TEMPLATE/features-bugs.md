@@ -1,3 +1,12 @@
+---
+name: Features/Bugs
+about: This will be used to create all kinds of issues (e.g. features, bugs,).
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 # Description:
 Replace this sentence with a description of the issue.
 
