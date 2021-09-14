@@ -21,6 +21,10 @@ phases:
       - ls
       - echo Running tests
       - npm run test-headless
+      - echo Checkout Master
+      - git checkout master
+      - echo Pull develop into master(PROD)
+      - git pull origin develop
       - echo Build started
       - npm run build:prod
 artifacts:
