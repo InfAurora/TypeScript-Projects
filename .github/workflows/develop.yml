@@ -30,8 +30,6 @@ jobs:
           git config --global pull.ff only
           git fetch
           git pull --rebase
-          echo rebase to master
-          git rebase origin/master
           echo Checking out master
           git checkout master
           echo pull updates on master before pulling develop in
