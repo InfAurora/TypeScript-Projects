@@ -23,31 +23,17 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: npm install
-        run: |
-          cd simple-blog
-          echo -----INSTALLING DEPENDENCIES-----
-          npm install
-          echo -----INSTALL COMPLETE-----
-
-      - name: npm test
-        run: |
-          cd simple-blog
-          echo -----RUNNING TESTS-----
-          npm run test-headless
-          echo -----RUNNING TESTS-----
-
-
       # Runs a set of commands using the runners shell
       - name: Merge develop into master
         run: |
           echo Fetching all available branches
+          git config --global pull.ff only
           git fetch
           git pull
           echo Checking out master
           git checkout master
           echo pull before rebase
-          git pull
+          git pull --rebase
           echo check branches and status
           git branch
           git status
