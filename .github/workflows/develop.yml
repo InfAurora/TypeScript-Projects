@@ -46,6 +46,6 @@ jobs:
           echo Checking out master
           git checkout master
           echo Pulling develop into master
-          git pull origin develop
+          git pull origin develop --ff-only
           echo Pushing changes up to master
           git push
