@@ -45,6 +45,9 @@ jobs:
           git fetch
           echo Checking out master
           git checkout master
+          echo check branches and status
+          git branch
+          git status
           git config pull.rebase true
           echo Pulling develop into master
           git pull origin develop --allow-unrelated-histories
