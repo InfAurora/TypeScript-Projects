@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: CI for PRs
 
 # Controls when the workflow will run
 on:
@@ -38,17 +38,3 @@ jobs:
           echo -----RUNNING TESTS-----
           npm run test-headless
           echo -----RUNNING TESTS-----
-
-
-      # Runs a set of commands using the runners shell
-      - name: Merge develop into master
-        run: |
-          echo fetch first
-          git fetch
-          echo check branches
-          git branch
-          ls
-          echo Merging develop into master
-          git checkout master
-          git pull origin develop
-          git push
