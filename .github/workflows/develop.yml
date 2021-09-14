@@ -26,6 +26,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Merge develop into master
         run: |
+          git config --global user.email "albajo0123@gmail.com"
+          git config --global user.name "InfAurora"
           echo Fetching all available branches
           git config --global pull.ff only
           git fetch
