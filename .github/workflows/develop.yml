@@ -34,7 +34,7 @@ jobs:
           git log --all --decorate --oneline --graph
           echo ----------------------------------------------------
           echo Checking out master
-          git checkout master
+          git checkout origin/master
           echo ----------------------------------------------------
           git log --all --decorate --oneline --graph
           echo ----------------------------------------------------
