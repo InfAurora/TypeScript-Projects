@@ -1,16 +1,8 @@
-<body>
-  <!-- mat-toolbar needs to be refactored to be its own component so it can be reusable -->
-  <mat-toolbar id="navbar" color="primary">
-    <div id="nav-title">Jose's Blog</div>
-    <div id="nav-content">
-      <a href="">Home</a>
-      <a href="">Login</a>
-      <a href="">Profile</a>
-    </div>
-  </mat-toolbar>
-  <main>
-    <!-- This should contain the router? So that it can be swapped out when navigating to multiple pages? -->
-    Main content here!
-  </main>
-</body>
-<router-outlet></router-outlet>
+<%@include file="app.headCom.html" %>
+
+  <body>
+    <%@include file="navBar.html" %>
+      <div>
+        <!--Include anything for main page-->
+      </div>
+      <%@include file="footer.jsp" %>
