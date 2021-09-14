@@ -31,7 +31,7 @@ jobs:
           git fetch
           git pull
           echo rebase to master
-          git rebase master
+          git rebase origin/master
           echo Checking out master
           git checkout master
           echo pull updates on master before pulling develop in
