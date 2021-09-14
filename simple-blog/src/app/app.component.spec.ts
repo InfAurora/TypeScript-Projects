@@ -32,6 +32,6 @@ describe('AppComponent', () => {
   it('should render title', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('#nav-title').textContent).toContain('Simple Blog');
+    expect(compiled.querySelector('#nav-title').textContent).toContain('Simple-Blog');
   });
 });
