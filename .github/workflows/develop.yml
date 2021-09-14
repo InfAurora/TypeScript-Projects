@@ -29,7 +29,7 @@ jobs:
           echo Fetching all available branches
           git config --global pull.ff only
           git fetch
-          git pull
+          git pull --rebase
           echo rebase to master
           git rebase origin/master
           echo Checking out master
