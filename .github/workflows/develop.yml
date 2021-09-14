@@ -38,3 +38,4 @@ jobs:
           git pull origin develop --allow-unrelated-histories --rebase
           echo Pushing changes up to master
           git push
+          echo done
