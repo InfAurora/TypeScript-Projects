@@ -46,6 +46,8 @@ jobs:
           git pull
           echo Checking out master
           git checkout master
+          echo pull before rebase
+          git pull
           echo check branches and status
           git branch
           git status
