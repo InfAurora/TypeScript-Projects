@@ -51,8 +51,7 @@ jobs:
           echo check branches and status
           git branch
           git status
-          git config pull.rebase true
           echo Pulling develop into master
-          git pull origin develop --allow-unrelated-histories
+          git pull origin develop
           echo Pushing changes up to master
           git push
