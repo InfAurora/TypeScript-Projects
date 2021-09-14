@@ -34,6 +34,7 @@ jobs:
           git pull --rebase
           echo Checking out master
           git checkout master
+          git fetch
           echo pull updates on master before pulling develop in
           git pull --rebase
           echo Pulling develop into master
