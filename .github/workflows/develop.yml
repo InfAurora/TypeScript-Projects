@@ -33,7 +33,7 @@ jobs:
           echo Checking out master
           git checkout master
           echo pull updates on master before pulling develop in
-          git pull
+          git pull --rebase
           echo Pulling develop into master
           git pull origin develop --allow-unrelated-histories
           echo Pushing changes up to master
