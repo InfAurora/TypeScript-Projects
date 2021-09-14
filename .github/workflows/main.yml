@@ -43,6 +43,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Merge develop into master
         run: |
+          echo fetch first
+          git fetch
           echo check branches
           git branch
           ls
