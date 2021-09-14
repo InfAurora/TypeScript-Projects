@@ -43,6 +43,7 @@ jobs:
         run: |
           echo Fetching all available branches
           git fetch
+          git pull
           echo Checking out master
           git checkout master
           echo check branches and status
