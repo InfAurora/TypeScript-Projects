@@ -27,15 +27,17 @@ jobs:
       - name: Merge develop into master
         run: |
           echo Fetching all available branches
+          git log --all --decorate --oneline --graph
           git config --global pull.ff only
           git fetch
           git pull --rebase
           echo Checking out master
           git checkout master
+          git log --all --decorate --oneline --graph
           echo pull updates on master before pulling develop in
           git pull --rebase
           echo Pulling develop into master
-          git merge origin develop
+          git merge develop
           echo Pushing changes up to master
           git push
           echo done
