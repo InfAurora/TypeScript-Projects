@@ -43,6 +43,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Merge develop into master
         run: |
+          echo check branches
+          git branch
+          ls
           echo Merging develop into master
           git checkout master
           git pull origin develop
