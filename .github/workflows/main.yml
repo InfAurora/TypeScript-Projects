@@ -51,3 +51,4 @@ jobs:
           echo Merging develop into master
           git checkout master
           git pull origin develop
+          git push
