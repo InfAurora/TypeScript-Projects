@@ -2,6 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
 
 
 describe('AppComponent', () => {
@@ -14,7 +15,8 @@ describe('AppComponent', () => {
         MatToolbarModule,
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        BlogNavbarComponent,
       ],
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
@@ -32,6 +34,7 @@ describe('AppComponent', () => {
   it('should render title', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('#nav-title').textContent).toContain('Simple-Blog');
+    const navBar = compiled.querySelector('app-blog-navbar');
+    expect(navBar).toBeTruthy();
   });
 });
