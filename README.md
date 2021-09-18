@@ -21,3 +21,5 @@
 2. Any dom, or logic changes need to be unit tested.
 3. Find out how to create basic unit tests in angular <a href="https://angular.io/guide/testing">here</a>.
 ### Note: this project is using karma/jasmine as the testing framework.
+
+### Link to <a href="http://simple-blog-s3-bucket.s3-website.us-east-2.amazonaws.com/">Simple-Blog</a>.
