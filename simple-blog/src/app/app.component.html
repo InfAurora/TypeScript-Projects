@@ -1,15 +1,5 @@
 <body>
-  <!-- mat-toolbar needs to be refactored to be its own component so it can be reusable -->
-  <mat-toolbar id="navbar" color="accent">
-    <div id="nav-title">
-      <a href="/">Simple-Blog</a>
-    </div>
-    <div id="nav-content">
-      <button type="button">Login</button>
-      <button type="button">Profile</button>
-      <button type="button">Admin</button>
-    </div>
-  </mat-toolbar>
+  <app-blog-navbar></app-blog-navbar>
   <main>
     <!-- This should contain the router? So that it can be swapped out when navigating to multiple pages? -->
     Main content here!
