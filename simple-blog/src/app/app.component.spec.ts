@@ -10,13 +10,13 @@ describe('AppComponent', () => {
   let app = null;
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule,
-        MatToolbarModule,
-      ],
       declarations: [
         AppComponent,
         BlogNavbarComponent,
+      ],
+      imports: [
+        RouterTestingModule,
+        MatToolbarModule,
       ],
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
