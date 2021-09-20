@@ -47,9 +47,9 @@ jobs:
           git fetch
           echo ---------Merge develop into master and push---------
           git merge --no-ff develop
-          git push
+          git push --force
           echo ---------Checkout develop---------
           git checkout develop
           echo ---------Pull and merge master back into develop---------
           git pull origin master
-          git push
+          git push --force
