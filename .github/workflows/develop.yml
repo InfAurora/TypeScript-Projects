@@ -42,8 +42,8 @@ jobs:
           echo ---------Fetching---------
           git fetch --unshallow
           git pull
-          echo ---------Checkout main and Fetch---------
-          git checkout main
+          echo ---------Checkout master and Fetch---------
+          git checkout master
           git fetch
           echo ---------Merge develop into master and push---------
           git merge --no-ff develop
@@ -51,5 +51,5 @@ jobs:
           echo ---------Checkout develop---------
           git checkout develop
           echo ---------Pull and merge master back into develop---------
-          git pull origin main
+          git pull origin master
           git push
