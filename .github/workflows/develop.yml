@@ -52,4 +52,6 @@ jobs:
           git checkout develop
           echo ---------Pull and merge master back into develop---------
           git pull origin master
+          git add .
+          git commit -m "Merge master into dev"
           git push --force
