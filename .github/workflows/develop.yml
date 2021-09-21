@@ -54,4 +54,4 @@ jobs:
           git pull origin master
           git add .
           git commit -m "Merge master into dev"
-          git push --force
+          git push origin develop--force
