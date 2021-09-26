@@ -4,15 +4,18 @@
 @import "./sass/mat-overrides/searchbar"
 
 html
+  // Use up all space on page
   height: 100%
   width: 100%
   padding: 0
   margin: 0
   body
+    // Use up all space on page
     height: 100%
     width: 100%
     padding: 0
     margin: 0
+    // Will include the searchbar mixin style only for app-blog-navbar
     app-blog-navbar
       @include searchbar
     main
