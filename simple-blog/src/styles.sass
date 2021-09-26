@@ -12,9 +12,24 @@ html
     width: 100%
     padding: 0
     margin: 0
-    nav
-      height: 75px
-      width: 100%
+    #searchbar-container
+      height: 50%
+      mat-form-field
+        height: 100%
+        background-color: var(--color-black-light)
+        color: var(--color-primary)
+        border-radius: 30px
+        .mat-form-field-wrapper
+          height: 100%
+          padding-bottom: 0
+          .mat-form-field-underline
+            &::before,
+            .mat-form-field-ripple
+              top: 30px
+      .mat-form-field-infix
+        height: 100%
+        padding: 0
+        border-top: none
     main
       height: 100%
       width: 100%

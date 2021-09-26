@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-navbar.component.sass']
 })
 export class BlogNavbarComponent implements OnInit {
-
+  value = "";
   constructor() { }
 
   ngOnInit(): void {
+    this.value = "";
   }
 
 }
