@@ -1,19 +1,19 @@
 <mat-toolbar id="navbar" color="primary">
   <div id="nav-title">
-    <a href="/">Simple-Blog</a>
+    <a href="/" aria-label="Simple Blog home page">Simple-Blog</a>
   </div>
   <div id="searchbar-container">
     <mat-form-field class="example-form-field" appearance="fill">
       <mat-label>Search</mat-label>
-      <input matInput type="text" [(ngModel)]="value">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button>
+      <input matInput type="text" [(ngModel)]="value" aria-label="Search">
+      <span id="clear-search" *ngIf="value" aria-label="Clear" (click)="value=''">
+        x
+      </span>
     </mat-form-field>
   </div>
   <div id="nav-content">
-    <button type="button">Login</button>
-    <button type="button">Profile</button>
+    <button type="button" aria-label="Login">Login</button>
+    <button type="button" aria-label="Profile">Profile</button>
     <button type="button">Admin</button>
   </div>
 </mat-toolbar>
