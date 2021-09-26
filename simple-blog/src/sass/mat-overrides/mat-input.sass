@@ -1,0 +1,36 @@
+@mixin searchbar()
+  #searchbar-container
+      height: 50%
+      mat-form-field
+        height: 100%
+        background-color: var(--color-black-light)
+        color: var(--color-primary)
+        border-radius: 30px
+        .mat-form-field-wrapper
+          height: 100%
+          padding-bottom: 0
+          .mat-form-field-flex
+            height: 100%
+            .mat-form-field-infix
+              height: 100%
+              padding: 0
+              border-top: none
+              .mat-input-element
+                position: relative
+                bottom: 5px
+                right: 10px
+              #clear-search
+                position: relative
+                bottom: 10px
+                right: 10px
+                color: var(--color-warn)
+                cursor: pointer
+                font-weight: 500
+              .mat-form-field-label
+                display: flex
+                justify-content: center
+          .mat-form-field-underline
+            &::before,
+            .mat-form-field-ripple
+              display: none
+              top: 0px
