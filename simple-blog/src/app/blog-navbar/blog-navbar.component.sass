@@ -1,9 +1,31 @@
 #navbar
+  // Space between everything in the navbar
   display: flex
   justify-content: space-between
   #nav-title
     // ToDO: will need to be restyled in the future
+    width: 200px
+  #searchbar-container
+    display: flex
+    height: 32px
+    width: 245px
+    // center search bar directly center
+    position: relative
+    left: 16px
+    align-items: center
+    justify-content: space-between
+    #search-btn
+      // center icon in button
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 20px
+      height: 32px
+      width: 32px
+      background-color: var(--color-black-light)
+  // Buttons on right side of navbar
   #nav-content
     display: flex
-    width: 20%
+    width: 200px
+    // Space buttons out evenly
     justify-content: space-evenly

@@ -1,20 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css"
-@import "./variables"
+@import "./sass/variables"
+@import "./sass/mat-overrides/searchbar"
 
 html
+  // Use up all space on page
   height: 100%
   width: 100%
   padding: 0
   margin: 0
   body
+    // Use up all space on page
     height: 100%
     width: 100%
     padding: 0
     margin: 0
-    nav
-      height: 75px
-      width: 100%
+    // Will include the searchbar mixin style only for app-blog-navbar
+    app-blog-navbar
+      @include searchbar
     main
-      height: auto
+      height: 100%
       width: 100%

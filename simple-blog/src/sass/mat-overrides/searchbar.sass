@@ -1,0 +1,46 @@
+@mixin searchbar()
+  #searchbar-container
+    // Size searchbar container to half the size of the navbar
+    height: 50%
+    mat-form-field
+      height: 100%
+      // Searchbar background color is white, with purple text
+      background-color: var(--color-white)
+      color: var(--color-primary)
+      border-radius: 30px
+      cursor: text
+      .mat-form-field-wrapper
+        height: 100%
+        padding-bottom: 0
+        .mat-form-field-flex
+          height: 100%
+          .mat-form-field-infix
+            height: 100%
+            // Remove unnecessary padding caused by padding and border-top
+            padding: 0
+            border-top: none
+            .mat-input-element
+              // Position text box inside of searchbar
+              position: relative
+              bottom: 5px
+              right: 10px
+            #clear-search
+              // Position clear button(the X) inside of searchbar
+              position: relative
+              bottom: 10px
+              right: 10px
+              // Make the clear "button" have a pointer when hovering
+              color: var(--color-warn)
+              cursor: pointer
+              font-weight: 500
+            .mat-form-field-label
+              // Center label(Search text)
+              display: flex
+              justify-content: center
+        .mat-form-field-underline
+          &::before,
+          .mat-form-field-ripple
+            // Hide both underlines
+            display: none
+            // Correct position of underlines if we decide to use it in future
+            top: 0px
