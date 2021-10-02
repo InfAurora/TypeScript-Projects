@@ -71,4 +71,4 @@ npm start
 
 ### Link to <a href="http://simple-blog-s3-bucket.s3-website.us-east-2.amazonaws.com/">Simple-Blog</a>.
 
-### Those needing basic angular cli commands, go <a href="https://github.com/InfAurora/TypeScript-Projects/blob/develop/simple-blog/README.md">here.</a>
+### Those needing basic angular cli commands, go <a href="https://github.com/InfAurora/TypeScript-Projects/blob/develop/simple-blog/README.md">here</a>.
