@@ -3,7 +3,7 @@
     <a href="/" aria-label="Simple Blog home page">Simple-Blog</a>
   </div>
   <div id="searchbar-container">
-    <mat-form-field class="example-form-field" appearance="fill">
+    <mat-form-field class="navbar-search-form-field" appearance="fill">
       <mat-label>Search</mat-label>
       <input matInput type="text" [(ngModel)]="value" aria-label="Search">
       <span id="clear-search" *ngIf="value" aria-label="Clear" (click)="value=''">
@@ -15,7 +15,7 @@
     </button>
   </div>
   <div id="nav-content">
-    <button type="button" aria-label="Login">Login</button>
+    <button type="button" (click)="openDialog()">Login</button>
     <button type="button" aria-label="Profile">Profile</button>
     <button type="button">Admin</button>
   </div>
