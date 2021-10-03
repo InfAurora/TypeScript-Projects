@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog'
 import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 import { BlogNavbarComponent } from './blog-navbar.component';
 
@@ -11,7 +13,8 @@ describe('BlogNavbarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ BlogNavbarComponent ],
       imports: [
-        MatToolbarModule,
+        MatDialogModule,
+        MatToolbarModule
       ],
     })
     .compileComponents();
