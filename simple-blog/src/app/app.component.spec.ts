@@ -1,8 +1,10 @@
 import { TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
+import { MatDialogModule } from '@angular/material/dialog'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterTestingModule } from '@angular/router/testing';
+
 
 
 describe('AppComponent', () => {
@@ -15,8 +17,9 @@ describe('AppComponent', () => {
         BlogNavbarComponent,
       ],
       imports: [
-        RouterTestingModule,
+        MatDialogModule,
         MatToolbarModule,
+        RouterTestingModule
       ],
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
