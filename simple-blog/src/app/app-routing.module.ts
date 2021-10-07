@@ -5,7 +5,7 @@ import { BlogProfilePageComponent } from './blog-profile-page/blog-profile-page.
 
 const routes: Routes = [
   { path: 'profile', component: BlogProfilePageComponent },
-  { path: '/', component: BlogHomePageComponent },
+  { path: '', component: BlogHomePageComponent },
 ];
 
 @NgModule({
