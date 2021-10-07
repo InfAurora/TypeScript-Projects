@@ -1,23 +1,27 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog'
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 import { AppComponent } from './app.component';
 import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
 import { BlogHomePageComponent } from './blog-home-page/blog-home-page.component'
 import { FormsModule } from '@angular/forms';
+import { LoginDialogComponent } from './blog-dialogs/login-dialog/login-dialog.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogNavbarComponent,
-    BlogHomePageComponent
+    BlogHomePageComponent,
+    LoginDialogComponent
   ],
   imports: [
     AppRoutingModule,
@@ -25,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     FormsModule,
     MatButtonModule,
+    MatDialogModule,
     MatToolbarModule,
     MatInputModule,
     MatIconModule
