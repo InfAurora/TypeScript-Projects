@@ -12,16 +12,18 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
-import { BlogHomePageComponent } from './blog-home-page/blog-home-page.component'
+import { BlogHomePageComponent } from './blog-home-page/blog-home-page.component';
 import { FormsModule } from '@angular/forms';
-import { LoginDialogComponent } from './blog-dialogs/login-dialog/login-dialog.component'
+import { LoginDialogComponent } from './blog-dialogs/login-dialog/login-dialog.component';
+import { BlogProfilePageComponent } from './blog-profile-page/blog-profile-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogNavbarComponent,
     BlogHomePageComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    BlogProfilePageComponent
   ],
   imports: [
     AppRoutingModule,
