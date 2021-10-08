@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatDialogModule } from '@angular/material/dialog'
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { MatDialogModule } from '@angular/material/dialog'
+import { FormsModule } from '@angular/forms';
 
 import { BlogNavbarComponent } from './blog-navbar.component';
 
@@ -13,10 +14,11 @@ describe('BlogNavbarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ BlogNavbarComponent ],
       imports: [
-        MatDialogModule,
-        MatToolbarModule
+        FormsModule,
+        MatDialogModule
       ],
-    })
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  })
     .compileComponents();
   });
 
