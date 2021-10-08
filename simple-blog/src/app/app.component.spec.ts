@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 import { AppComponent } from './app.component';
 import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
+
 import { MatDialogModule } from '@angular/material/dialog'
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterTestingModule } from '@angular/router/testing';
-
-
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   let fixture = null;
@@ -17,10 +17,10 @@ describe('AppComponent', () => {
         BlogNavbarComponent,
       ],
       imports: [
-        MatDialogModule,
-        MatToolbarModule,
-        RouterTestingModule
+        FormsModule,
+        MatDialogModule
       ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);
     app = fixture.componentInstance;
