@@ -1,10 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 import { AppComponent } from '../../app.component';
 import { BlogNavbarComponent } from '../../blog-navbar/blog-navbar.component';
-import { MatDialogModule } from '@angular/material/dialog'
-import { MatToolbarModule } from '@angular/material/toolbar';
-
 import { LoginDialogComponent } from './login-dialog.component';
 
 describe('LoginDialogComponent', () => {
@@ -13,17 +11,12 @@ describe('LoginDialogComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         AppComponent,
         BlogNavbarComponent,
         LoginDialogComponent
       ],
-      imports: [
-        MatDialogModule,
-        MatToolbarModule,
-        RouterTestingModule
-        
-      ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     })
     .compileComponents();
   });
@@ -42,6 +35,6 @@ describe('LoginDialogComponent', () => {
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
     const loginButton = compiled.querySelector('#login-form-btn');
-    expect(loginButton).toBeTruthy;
+    expect(loginButton).toBeDefined();
   });
 });
