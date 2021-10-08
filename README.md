@@ -66,6 +66,7 @@ npm start
 1. Use TDD(test driven development) or some form of TDD.
 1. Any dom, or logic changes need to be unit tested.
 1. Find out how to create basic unit tests in angular <a href="https://angular.io/guide/testing">here</a>.
+1. ALWAYS import CUSTOM_ELEMENTS_SCHEMA and add it to the TestBed; for any newly added test files, so that you do not have to fight with constant blue errors that show up when running tests.
 
 ### Note: this project is using karma/jasmine as the testing framework.
 
