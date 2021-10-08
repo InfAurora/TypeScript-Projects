@@ -1,6 +1,6 @@
 <mat-toolbar id="navbar" color="primary">
   <div id="nav-title">
-    <a routerLink="/" aria-label="Simple Blog home page">Simple-Blog</a>
+    <button routerLink="/" aria-label="Simple Blog home page" id="heading-link">Simple-Blog</button>
   </div>
   <div id="searchbar-container">
     <mat-form-field class="navbar-search-form-field" appearance="fill">
@@ -15,8 +15,8 @@
     </button>
   </div>
   <div id="nav-content">
-    <button type="button" aria-label="Login" (click)="openDialog()">Login</button>
-    <button type="button" aria-label="Profile" routerLink="/profile">Profile</button>
-    <button type="button">Admin</button>
+    <button mat-button color="accent" aria-label="Login" (click)="openDialog()">Login</button>
+    <button mat-button color="accent" aria-label="Profile" routerLink="/profile">Profile</button>
+    <button mat-button color="accent">Admin</button>
   </div>
 </mat-toolbar>

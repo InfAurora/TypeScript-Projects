@@ -3,8 +3,27 @@
   display: flex
   justify-content: space-between
   #nav-title
-    // ToDO: will need to be restyled in the future
-    width: 200px
+    // Home Page Button Div
+    // width 200px would keep search centered with create post button
+    border: 3px solid black
+    border-radius: 10px
+    width: 150px
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: var(--color-accent)
+    #heading-link
+      // Home Page Button
+      border-radius: 10px
+      border: none
+      width: 100%
+      height: 100%
+      background: transparent
+      font: inherit
+      &:hover
+        background-color: var(--color-logo-hover)
+
+
   #searchbar-container
     display: flex
     height: 32px
@@ -29,3 +48,4 @@
     width: 200px
     // Space buttons out evenly
     justify-content: space-evenly
+    background-color: var(--color-white)
