@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BlogNavbarComponent } from './blog-navbar/blog-navbar.component';
 
 import { MatDialogModule } from '@angular/material/dialog'
+import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
@@ -18,7 +19,8 @@ describe('AppComponent', () => {
       ],
       imports: [
         FormsModule,
-        MatDialogModule
+        MatDialogModule,
+        MatMenuModule
       ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     }).compileComponents();
