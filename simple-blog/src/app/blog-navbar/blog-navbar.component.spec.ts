@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { MatDialogModule } from '@angular/material/dialog'
+import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';
 
 import { BlogNavbarComponent } from './blog-navbar.component';
@@ -15,7 +16,8 @@ describe('BlogNavbarComponent', () => {
       declarations: [ BlogNavbarComponent ],
       imports: [
         FormsModule,
-        MatDialogModule
+        MatDialogModule,
+        MatMenuModule
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA]
   })

@@ -17,7 +17,13 @@
   <div id="nav-content">
     <button mat-button color="accent" aria-label="Sign up">Sign Up</button>
     <button mat-button color="accent" aria-label="Login" (click)="openDialog()">Login</button>
-    <button mat-button color="accent" aria-label="Profile" routerLink="/profile">Profile</button>
-    <button mat-button color="accent">Admin</button>
+    <button mat-button color="accent" [matMenuTriggerFor]="belowMenu" id="menu-btn">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <!-- matMenu below is associated with menu-btn -->
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item aria-label="Profile" routerLink="/profile">Profile</button>
+      <button mat-menu-item aria-label="Admin">Admin</button>
+    </mat-menu>
   </div>
 </mat-toolbar>
