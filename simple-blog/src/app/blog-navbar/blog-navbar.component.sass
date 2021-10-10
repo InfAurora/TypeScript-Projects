@@ -4,8 +4,9 @@
   justify-content: space-between
   #nav-title
     // Home Page Button Div
-    // width 200px to keep search centered with create post button
-    width: 200px
+    // width 275 to keep search centered with create post button
+    // This width should be the same as #nav-content
+    width: 275px
     display: flex
     align-items: center
     justify-content: center
@@ -42,7 +43,15 @@
   // Buttons on right side of navbar
   #nav-content
     display: flex
-    width: 200px
+    // This width should change if other buttons drop off
+    width: 275px
     // Space buttons out evenly
     justify-content: space-evenly
-    background-color: var(--color-white)
+    align-items: center
+    button
+      display: flex
+      height: 25px
+      width: 55px
+      justify-content: center
+      align-items: center
+      background-color: var(--color-white)
