@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { LoginDialogComponent } from '../blog-dialogs/login-dialog/login-dialog.component';
+import { SignupDialogComponent } from '../blog-dialogs/signup-dialog/signup-dialog.component';
 
 @Component({
   selector: 'app-blog-navbar',
@@ -15,7 +16,11 @@ export class BlogNavbarComponent implements OnInit {
     this.value = "";
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(LoginDialogComponent);
+  openDialog(buttonPressed: String) {
+    if (buttonPressed === 'signup') {
+      this.dialog.open(SignupDialogComponent);
+    } else {
+      this.dialog.open(LoginDialogComponent);
+    }
   }
 }
