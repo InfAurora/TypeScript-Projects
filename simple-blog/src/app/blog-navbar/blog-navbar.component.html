@@ -15,8 +15,8 @@
     </button>
   </div>
   <div id="nav-content">
-    <button mat-button color="accent" aria-label="Sign up">Sign Up</button>
-    <button mat-button color="accent" aria-label="Login" (click)="openDialog()">Login</button>
+    <button mat-button color="accent" aria-label="Sign up" (click)="openDialog('signup')">Sign Up</button>
+    <button mat-button color="accent" aria-label="Login" (click)="openDialog('login')">Login</button>
     <button mat-button color="accent" [matMenuTriggerFor]="belowMenu" id="menu-btn">
       <mat-icon>account_circle</mat-icon>
     </button>
