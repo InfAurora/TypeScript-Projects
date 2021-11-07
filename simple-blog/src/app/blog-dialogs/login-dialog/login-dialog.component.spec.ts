@@ -8,6 +8,7 @@ import { LoginDialogComponent } from './login-dialog.component';
 describe('LoginDialogComponent', () => {
   let component: LoginDialogComponent;
   let fixture: ComponentFixture<LoginDialogComponent>;
+  let compiled = null;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -25,6 +26,7 @@ describe('LoginDialogComponent', () => {
     fixture = TestBed.createComponent(LoginDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    compiled = fixture.nativeElement;
   });
 
   it('should create', () => {
@@ -32,8 +34,6 @@ describe('LoginDialogComponent', () => {
   });
 
   it('should find submitLogin button', () => {
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
     const loginButton = compiled.querySelector('#login-form-btn');
     expect(loginButton).toBeDefined();
   });

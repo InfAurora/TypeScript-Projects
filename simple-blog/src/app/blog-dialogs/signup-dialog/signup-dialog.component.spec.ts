@@ -6,6 +6,7 @@ import { SignupDialogComponent } from './signup-dialog.component';
 describe('SignupDialogComponent', () => {
   let component: SignupDialogComponent;
   let fixture: ComponentFixture<SignupDialogComponent>;
+  let compiled = null;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
@@ -19,9 +20,15 @@ describe('SignupDialogComponent', () => {
     fixture = TestBed.createComponent(SignupDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+    compiled = fixture.nativeElement;
   });
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should find submitLogin button', () => {
+    const signupButton = compiled.querySelector('#sign-up-form-btn');
+    expect(signupButton).toBeDefined();
   });
 });
