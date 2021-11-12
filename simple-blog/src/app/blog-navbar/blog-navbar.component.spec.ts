@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog'
 import { MatMenuModule } from '@angular/material/menu';
 import { FormsModule } from '@angular/forms';
@@ -16,6 +17,7 @@ describe('BlogNavbarComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ BlogNavbarComponent ],
       imports: [
+        BrowserAnimationsModule,
         FormsModule,
         MatDialogModule,
         MatMenuModule
