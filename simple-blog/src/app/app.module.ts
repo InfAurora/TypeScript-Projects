@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginDialogComponent } from './blog-dialogs/login-dialog/login-dialog.component';
 import { BlogProfilePageComponent } from './blog-profile-page/blog-profile-page.component';
 import { SignupDialogComponent } from './blog-dialogs/signup-dialog/signup-dialog.component';
+import { PreviewOfPostComponent } from './blog-post/preview-of-post/preview-of-post.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SignupDialogComponent } from './blog-dialogs/signup-dialog/signup-dialo
     BlogHomePageComponent,
     LoginDialogComponent,
     BlogProfilePageComponent,
-    SignupDialogComponent
+    SignupDialogComponent,
+    PreviewOfPostComponent
   ],
   imports: [
     AppRoutingModule,
