@@ -19,6 +19,7 @@ import { LoginDialogComponent } from './blog-dialogs/login-dialog/login-dialog.c
 import { BlogProfilePageComponent } from './blog-profile-page/blog-profile-page.component';
 import { SignupDialogComponent } from './blog-dialogs/signup-dialog/signup-dialog.component';
 import { PreviewOfPostComponent } from './blog-post/preview-of-post/preview-of-post.component';
+import { BlogAdminPageComponent } from './blog-admin-page/blog-admin-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PreviewOfPostComponent } from './blog-post/preview-of-post/preview-of-p
     LoginDialogComponent,
     BlogProfilePageComponent,
     SignupDialogComponent,
-    PreviewOfPostComponent
+    PreviewOfPostComponent,
+    BlogAdminPageComponent
   ],
   imports: [
     AppRoutingModule,
