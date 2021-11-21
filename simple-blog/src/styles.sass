@@ -2,6 +2,7 @@
 @import "@angular/material/prebuilt-themes/deeppurple-amber.css"
 @import "./sass/variables"
 @import "./sass/mat-overrides/searchbar"
+@import "./sass/mat-overrides/toolbar"
 
 html
   // Use up all space on page
@@ -11,13 +12,17 @@ html
   margin: 0
   body
     // Use up all space on page
+    max-height: 100%
     height: 100%
     width: 100%
     padding: 0
     margin: 0
-    // Will include the searchbar mixin style only for app-blog-navbar
+    .page-content
+      height: var(--content-size)
+    // Will include the searchbar, toolbar mixin style only for app-blog-navbar
     app-blog-navbar
       @include searchbar
+      @include toolbar
     main
       height: 100%
       width: 100%
